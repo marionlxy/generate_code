@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configure>
+	<basedir>H:/luna/workspace/carclubs-wap/src/main/java</basedir>
+	<basePackage>com.krm.voteplateform.web</basePackage>
+	<!-- <db>
+		<dbName>lanmei</dbName>
+		<user>lanmei</user>
+		<pwd>lanmei</pwd>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3306/lanmei?useUnicode=true&amp;characterEncoding=utf-8</url>
+	</db> -->
+	
+	<db>
+		<dbType>oracle</dbType>
+		<dbName>orcl</dbName>
+		<user>vots</user>
+		<pwd>votepass</pwd>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@172.16.87.198:1521/orcl</url>
+	</db> 
+	
+	<packageSetting>
+		<actionPackage>controller</actionPackage>
+		<daoPackage>dao</daoPackage>
+		<daoImplPackage>impl</daoImplPackage>
+		<servicePackage>service</servicePackage>
+		<serviceImplPackage>impl</serviceImplPackage>
+		<entityPackage>model</entityPackage>
+		<mapperPackage>mapper</mapperPackage>
+		<viewPackage>view</viewPackage>
+		<isDeleteTablePrefix>true</isDeleteTablePrefix>
+	</packageSetting>
+	<module>
+		<persistance>mybatis</persistance>
+		<!--<persistance>hibernate</persistance> -->
+		<!-- 模块名 -->
+		<name>mettingmem</name>
+		<isDeleteTablePrefix>true</isDeleteTablePrefix>
+		<savePath>h:/genkrmtest</savePath>
+		 <framework>mvc</framework> 
+		<!--  <framework>dorado</framework>  -->
+		<table name="BAS_PRO_COME_MEM"/>
+		<!-- <table name="cms_article"/> -->
+	</module>
+</configure>
